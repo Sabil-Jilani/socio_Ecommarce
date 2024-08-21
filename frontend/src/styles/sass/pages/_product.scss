@@ -1,0 +1,120 @@
+.product {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 2rem;
+  margin: 2rem 1rem;
+  width: 95%;
+  & > *:not(:last-child) {
+    margin-right: 2%;
+  }
+  & > * {
+    border-radius: 0.7rem;
+  }
+  .main {
+    overflow: hidden;
+    width: 48%;
+
+    .reviews {
+      margin: 1.5rem 0;
+      &__heading {
+        padding-left: 1rem;
+        color: white;
+
+        background-image: $Gradient-left;
+        font-size: larger;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+      &__btn {
+        align-self: flex-start;
+        margin-top: 0.6rem;
+      }
+      &__box {
+        border-top: 2px solid $Grey-light-4;
+        border-bottom: 2px solid $Grey-light-4;
+        overflow: overlay;
+        max-height: 50rem;
+        margin: 1.6rem 0;
+        padding: 1.5rem;
+      }
+      &__card {
+        border-radius: 1rem;
+        margin-top: 1.6rem;
+        position: relative;
+        padding: 1rem 1.5rem;
+        &__name {
+          line-height: 1.1;
+          font-weight: 500;
+          font-size: larger;
+          margin-right: 2.5rem;
+          display: inline-block;
+        }
+        &__date {
+          margin-top: 0.6rem;
+          font-size: smaller;
+        }
+        &__description {
+          margin-top: 1.6rem;
+        }
+      }
+    }
+  }
+
+  &__photo--box {
+  }
+  &__image {
+    width: 100%;
+  }
+
+  &__details {
+    padding: 3rem 3.5rem 3rem;
+    width: 30%;
+    list-style: none;
+    & > *:not(:first-child) {
+      margin-top: 1.25rem;
+    }
+
+    &__items {
+      &:not(:last-child) {
+        padding: 1rem 0;
+        border-bottom: 2px solid $Grey-dark-3;
+      }
+    }
+    &__name {
+    }
+
+    &__price {
+      font-weight: 400;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    &__description {
+      font-size: 1.7rem;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+  }
+  &__cart {
+    list-style: none;
+    padding: 3rem 3.5rem 3rem;
+    background-color: white;
+    width: 20%;
+    & > *:not(:first-child) {
+      margin-top: 1.25rem;
+    }
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-wrap: wrap;
+      &:not(:last-child) {
+        padding: 1rem 0;
+        border-bottom: 2px solid $Grey-dark-3;
+      }
+      &--key {
+      }
+      &--value {
+      }
+    }
+  }
+}

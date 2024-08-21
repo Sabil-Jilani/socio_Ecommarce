@@ -1,0 +1,12 @@
+.table {
+  width: 100%;
+  text-align: center;
+  td,
+  th {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  tr:nth-child(odd) {
+    background-color: rgba($Grey-dark-3, 0.3);
+  }
+}

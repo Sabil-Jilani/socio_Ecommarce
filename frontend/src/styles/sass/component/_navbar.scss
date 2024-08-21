@@ -1,0 +1,51 @@
+.nav {
+  z-index: 11;
+  color: white;
+  width: 95%;
+  background-image: $Gradient;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  &__brand {
+    display: inherit;
+    overflow: hidden;
+    border-radius: 6.5rem;
+  }
+  &__logo {
+    width: 5.5rem;
+  }
+  &__list--1 {
+    list-style: none;
+    display: inherit;
+  }
+  &__list--2 {
+    list-style: none;
+    display: inherit;
+  }
+  &__items {
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+  &__items::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    display: inline-block;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transform-origin: left;
+    transition: all 0.25s;
+  }
+  &__items:hover::before {
+    width: 100%;
+  }
+}

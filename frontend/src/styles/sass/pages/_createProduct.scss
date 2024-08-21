@@ -1,0 +1,12 @@
+.createProduct {
+  width: 80%;
+  margin: 1rem auto;
+  .header {
+    padding: 0.7rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    &__heading {
+      font-size: 3.35rem;
+    }
+  }
+}

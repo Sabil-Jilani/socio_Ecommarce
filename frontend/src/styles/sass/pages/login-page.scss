@@ -1,0 +1,53 @@
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  &__box {
+    padding: 4rem;
+    box-shadow: 1rem 1rem 2rem;
+    width: 60%;
+    background: white;
+    padding: 4rem;
+  }
+  &__heading {
+    color: transparent;
+    background-image: $Gradient;
+    background-clip: text;
+    font-size: 3.6rem;
+    margin: 1.3rem 0;
+    text-align: center;
+  }
+  .oauth {
+    border-top: 1px solid #ccc;
+    margin: 3rem auto 0;
+    width: 70%;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 3rem 1rem 0.5rem;
+    button {
+      box-shadow: 0.8rem 0.8rem 1rem black;
+      padding: 1rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: $Grey-light-4;
+      .google::before {
+        color: red;
+        margin-right: 0.4rem;
+        font-size: 2.4rem;
+      }
+      .facebook::before {
+        color: blue;
+        margin-right: 0.4rem;
+        font-size: 2.4rem;
+      }
+      .github::before {
+        color: black;
+        margin-right: 0.4rem;
+        font-size: 2.4rem;
+      }
+    }
+  }
+}

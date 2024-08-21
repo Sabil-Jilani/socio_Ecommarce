@@ -1,0 +1,122 @@
+.profile {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  &__heading {
+    margin-top: 2rem;
+    font-size: larger;
+  }
+  .serch {
+    &__box {
+      margin: 0 auto;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      transition: all 0.3s;
+    }
+    &__box:hover {
+      width: 75%;
+    }
+    &__group {
+      width: 100%;
+    }
+
+    &__input {
+      background-color: $Grey-light-3;
+      font-size: inherit;
+      font-family: inherit;
+      padding: 1rem 2rem;
+      width: 100%;
+      border: none;
+      border-radius: 50px;
+      transition: all 0.33s;
+    }
+    &__input::placeholder {
+      color: inherit;
+    }
+    &__input:placeholder-shown + .serch__label {
+      visibility: hidden;
+      transform: translateY(0);
+    }
+
+    &__input:focus {
+      outline: none;
+    }
+    &__label {
+      position: absolute;
+      top: 1.2rem;
+      left: 2rem;
+      transform: translateY(3.5rem);
+      transition: all 0.3s;
+    }
+
+    &__button {
+      border: none;
+      background-color: inherit;
+      position: absolute;
+      top: 0.9rem;
+      right: 1.5rem;
+      .fa-magnifying-glass:before {
+        font-size: larger;
+      }
+    }
+  }
+  &__box {
+    box-shadow: 0.8rem 0.8rem 2rem $Grey-dark-3;
+    position: relative;
+    padding: 2rem 7rem 2rem 3.5rem;
+    background-color: white;
+    margin: 2.5rem 0;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s;
+    &:hover {
+      box-shadow: 1rem 1rem 3.5rem $Grey-dark-3;
+      transform: scale(1.06);
+    }
+  }
+  &__photo {
+    border: 2px solid lightblue;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    margin-right: 3rem;
+    position: relative;
+    overflow: hidden;
+    &--box {
+      border: 0.7rem solid mediumpurple;
+      border-radius: 50%;
+      width: 12rem;
+    }
+  }
+  &__main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 12rem;
+    margin-right: auto;
+  }
+  &__name {
+    font-weight: 500;
+    line-height: 1.3;
+    font-size: 2rem;
+  }
+  &__location {
+    font-weight: 300;
+    font-size: 1.45rem;
+  }
+
+  &__hobbies {
+    &--list {
+      list-style: none;
+      i {
+        margin-right: 0.4rem;
+        color: purple;
+        font-size: larger;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.placeOrder {
+  padding: 1.5rem;
+  margin: 1rem auto;
+  width: 88%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  &__order {
+    width: 59% !important;
+    padding: 0rem 1rem 3rem !important;
+  }
+
+  &__heading {
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+    background-image: $Gradient;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+  }
+  &__para {
+    display: flex;
+    & > * {
+      margin-right: 1.4rem;
+    }
+  }
+  &__summary {
+    width: 27% !important;
+  }
+}

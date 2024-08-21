@@ -1,0 +1,35 @@
+.user {
+  &__dashboard {
+    padding: 1.3rem 0;
+    display: flex;
+    align-items: start;
+    width: 90%;
+    margin: 1rem auto;
+    justify-content: space-around;
+  }
+  &__heading {
+    margin: 0 0 2% 2%;
+    font-size: 2.5rem;
+    display: inline-block;
+    background-image: $Gradient;
+    color: transparent;
+    background-clip: text;
+  }
+
+  &__profile {
+    width: 27%;
+    padding: 1.3rem 1rem;
+  }
+  &__orders {
+    padding: 1.3rem 1.5rem;
+    width: 68%;
+  }
+  &__posts {
+    overflow: overlay;
+    height: 155vh;
+    margin: 3rem 0 0;
+    padding: 2rem 4.5rem;
+    border-bottom: $border;
+    border-top: $border;
+  }
+}

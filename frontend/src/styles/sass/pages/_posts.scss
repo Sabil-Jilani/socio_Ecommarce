@@ -1,0 +1,171 @@
+.say__something {
+  background-image: $Gradient;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 0.4rem;
+}
+.form {
+  &__textarea {
+    padding: 2rem;
+    font-family: $arimo-font;
+    width: 100%;
+    height: 10.38rem;
+    word-spacing: 2px;
+    line-height: 1.25;
+  }
+}
+.user {
+  margin-top: 3rem;
+  justify-content: start;
+  flex-direction: column;
+  &__photo {
+    border: 2px solid lightblue;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+    overflow: hidden;
+    &--box {
+      border: 0.7rem solid mediumpurple;
+      border-radius: 50%;
+      width: 12rem;
+    }
+  }
+  &__name {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}
+.post {
+  &__container {
+    width: 80%;
+    margin: 3rem auto;
+    *:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__heading {
+    color: transparent;
+    background-clip: text;
+    width: 10%;
+    font-size: 3.5rem;
+    background-image: $Gradient;
+  }
+  &__greating {
+    font-weight: 500;
+    font-size: x-large;
+  }
+
+  &__main {
+    padding: 2rem 2rem 1.5rem 3rem;
+    display: flex;
+    background-color: white;
+    box-shadow: 0.6rem 0.6rem 2rem $Grey-dark-2;
+    transition: all 0.4s;
+    *:not(:last-child) {
+      margin-bottom: 0 !important;
+    }
+    margin-bottom: 6rem !important;
+  }
+  &__main:hover {
+    box-shadow: 0.9rem 0.9rem 2.5rem $Grey-dark-2;
+    transform: scale(1.05);
+  }
+
+  &__body {
+    padding: 2rem 0 0 4rem;
+    margin: 0;
+  }
+  &__cote {
+    font-family: $arimo-font;
+
+    line-height: 1.2;
+    font-size: 2rem;
+  }
+  &__date {
+    transform: translateY(2rem);
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
+  &__like,
+  &__comments,
+  &__delete {
+    i::before {
+      font-size: 2.5rem;
+    }
+  }
+}
+.comment {
+  padding: 4rem 2rem 2rem;
+  .form {
+    display: flex;
+    padding-left: 6rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem !important;
+    &__textarea {
+      padding: 2rem;
+      font-family: $arimo-font;
+      width: 100%;
+      height: 10.38rem;
+      word-spacing: 2px;
+      line-height: 1.25;
+      width: 57.4rem;
+      height: 8.8rem;
+      margin-right: 2rem;
+    }
+  }
+  &__main {
+    border: 1px solid $Grey-dark-3;
+    height: 60rem;
+    width: 95%;
+    overflow: overlay;
+    padding: 3rem 4rem;
+  }
+  &__box {
+    position: relative;
+    .fa-circle-xmark {
+      position: absolute;
+      top: -1rem;
+      right: -1.4rem;
+      &::before {
+        font-size: 3rem;
+      }
+    }
+    padding: 2rem;
+    box-shadow: 0.8rem 0.8rem 1.2rem $Grey-dark-3;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box:not(:first-child) {
+    margin-top: 3rem;
+  }
+
+  &__user {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    &__photo {
+      &--box {
+        width: 6.5rem;
+        border-radius: 50%;
+      }
+    }
+    &__name {
+      margin-top: 1rem;
+    }
+  }
+  &__body {
+    width: 67%;
+  }
+  &__cote {
+  }
+  &__date {
+    margin-top: 1.5rem;
+    font-size: initial;
+    font-weight: 400;
+  }
+}

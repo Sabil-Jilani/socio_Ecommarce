@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  min-height: 100vh;
+  background-color: red;
+  position: relative;
+  background-color: $Grey-light-3;
+  padding: 11rem 3rem 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  font-style: normal;
+}

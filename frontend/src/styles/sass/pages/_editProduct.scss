@@ -1,0 +1,10 @@
+.editProduct {
+  width: 60%;
+  margin: 1.5rem auto;
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.7rem 6rem;
+  }
+}
