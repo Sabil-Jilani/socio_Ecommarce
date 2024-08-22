@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:8000/";
+export const BASE_URL = "https://socio-ecommarce.onrender.com";
 export const OPEN_LOGIN_MODAL = "OPEN_LOGIN_MODAL";
 export const CLOSE_LOGIN_MODAL = "CLOSE_LOGIN_MODAL";
 export const OPEN_REGISTER_MODAL = "OPEN_REGISTER_MODAL";
