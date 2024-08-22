@@ -24,7 +24,7 @@ const asyncErrorHandler = require("./middlewares/asyncErrorHandler");
 const { none } = require("./middlewares/uploadImg");
 
 const corsOptions = {
-  origin: [process.env.FRONTEND_BASEURL, "http://192.168.0.105:3000"],
+  origin: [process.env.FRONTEND_BASEURL, "http://localhost:3000"],
   credentials: true,
   "access-control-allow-credentials": true,
   " Access-Control-Allow-Origin": true,
