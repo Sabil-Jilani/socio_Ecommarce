@@ -81,7 +81,7 @@ router.post(
         });
       await result.save();
     }
-    res.redirect(`http://localhost:3000/order/${status}/${id}`);
+    res.redirect(`${process.env.FRONTEND_BASEURL}order/${status}/${id}`);
   })
 );
 router.route("/delete/:id").delete(
