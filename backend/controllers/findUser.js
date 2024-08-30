@@ -9,7 +9,7 @@ module.exports = async (username, res) => {
   if (!user.isvarified) {
     const token = await TokenModel.findOne({ user: user._id });
     if (token) {
-      let link = `${process.env.FRONTEND_BASEURL}/user/${user._id}/token/${token.token}`;
+      let link = `${process.env.FRONTEND_BASEURL}user/${user._id}/token/${token.token}`;
       sendMail(user.username, "varification link", link);
       message =
         "varification link has been sent to your mail.please varify account";
